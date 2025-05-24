@@ -8,7 +8,7 @@ This repository contains the submission for the BeyondChats internship assignmen
 
 ## Live Demo
 
-**Deployed Application**: [https://your-deployment-url.vercel.app](https://your-deployment-url.vercel.app)
+**Deployed Application**: [https://your-deployment-url.vercel.app](https://beyond-chats-aasignment.vercel.app/)
 
 ---
 
