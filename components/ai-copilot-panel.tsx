@@ -6,12 +6,12 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { Bot, ArrowRight, Copy, ChevronDown } from "lucide-react";
+import { Bot, ArrowRight, Copy, ChevronDown, X } from "lucide-react";
 import type { Conversation } from "@/app/page";
-
 
 interface AICopilotPanelProps {
   conversation: Conversation;
+  onClose?: () => void;
 }
 
 interface AIResponse {
@@ -192,7 +192,8 @@ export function AICopilotPanel({ conversation }: AICopilotPanelProps) {
                               {response.answer}
                             </p>
                           )}
-                        </div>                          {!response.isGenerating &&
+                        </div>{" "}
+                        {!response.isGenerating &&
                           response.sources.length > 0 && (
                             <div className="mt-4">
                               <p className="text-xs text-gray-500 mb-3">
@@ -204,7 +205,9 @@ export function AICopilotPanel({ conversation }: AICopilotPanelProps) {
                                     key={index}
                                     className="flex items-center gap-2 text-xs"
                                   >
-                                    <span className="text-xs text-blue-500">•</span>
+                                    <span className="text-xs text-blue-500">
+                                      •
+                                    </span>
                                     <span className="text-gray-700">
                                       {source}
                                     </span>
@@ -251,7 +254,10 @@ export function AICopilotPanel({ conversation }: AICopilotPanelProps) {
             {/* Add to Composer */}
             {responses.length > 0 && (
               <div className="mb-6">
-                <Button variant="outline" className="w-full justify-between p-4 border border-gray-200 shadow-sm hover:shadow-md transition-all">
+                <Button
+                  variant="outline"
+                  className="w-full justify-between p-4 border border-gray-200 shadow-sm hover:shadow-md transition-all"
+                >
                   <div className="flex items-center gap-2">
                     <Copy className="w-4 h-4 text-blue-500" />
                     <span>Add to composer</span>

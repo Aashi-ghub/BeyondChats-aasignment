@@ -1,3 +1,13 @@
+/**
+ * @file chat-window.tsx
+ * @description The main chat interface component that displays conversation messages
+ * and provides functionality for users to compose and send new messages.
+ * 
+ * @author BeyondChats Team
+ * @created 2025-05-24
+ * @lastModified 2025-05-24
+ */
+
 "use client";
 
 import type React from "react";
@@ -22,8 +32,14 @@ import { MessageBubble } from "@/components/message-bubble";
 import { TextEditor } from "@/components/text-editor";
 import type { Conversation } from "@/app/page";
 
+/**
+ * @interface ChatWindowProps
+ * @description Props interface for the ChatWindow component
+ */
 interface ChatWindowProps {
+  /** The currently selected conversation object */
   conversation: Conversation;
+  /** Callback function to handle sending messages */
   onSendMessage: (content: string) => void;
 }
 
