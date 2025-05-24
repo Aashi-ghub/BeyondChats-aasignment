@@ -40,11 +40,11 @@ This repository contains the submission for the BeyondChats internship assignmen
 
 ### Desktop View
 
-![Desktop UI](./DesktopUI.jpg)
+![Desktop UI](./public/DesktopUI.jpg)
 
 ### Mobile View (Sidebar Collapsed)
 
-![Mobile Sidebar](./mobileUI.jpg)
+![Mobile Sidebar](./public/mobileUI.jpg)
 
 
 ---
