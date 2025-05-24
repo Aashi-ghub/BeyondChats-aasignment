@@ -40,17 +40,12 @@ This repository contains the submission for the BeyondChats internship assignmen
 
 ### Desktop View
 
-![Desktop UI](./screenshots/desktop-view.png)
+![Desktop UI](./DesktopUI.jpg)
 
 ### Mobile View (Sidebar Collapsed)
 
-![Mobile Sidebar](./screenshots/mobile-sidebar.png)
+![Mobile Sidebar](./mobileUI.jpg)
 
-### Chat Interface with AI Assist
-
-![Chat Interface](./screenshots/chat-interface.png)
-
-> _Ensure all referenced screenshot files exist in the `/screenshots` directory or update the paths accordingly._
 
 ---
 
